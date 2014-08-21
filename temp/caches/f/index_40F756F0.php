@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:28:{i:0;s:52:"/Users/yangmingzhou/www/www/themes/1hdshop/index.dwt";i:1;s:67:"/Users/yangmingzhou/www/www/themes/1hdshop/library/index_header.lbi";i:2;s:60:"/Users/yangmingzhou/www/www/themes/1hdshop/library/imenu.lbi";i:3;s:61:"/Users/yangmingzhou/www/www/themes/1hdshop/library/iflash.lbi";i:4;s:66:"/Users/yangmingzhou/www/www/themes/1hdshop/library/ad_position.lbi";i:5;s:67:"/Users/yangmingzhou/www/www/themes/1hdshop/library/new_articles.lbi";i:6;s:66:"/Users/yangmingzhou/www/www/themes/1hdshop/library/order_query.lbi";i:7;s:68:"/Users/yangmingzhou/www/www/themes/1hdshop/library/invoice_query.lbi";i:8;s:68:"/Users/yangmingzhou/www/www/themes/1hdshop/library/recommend_new.lbi";i:9;s:61:"/Users/yangmingzhou/www/www/themes/1hdshop/library/ibeand.lbi";i:10;s:60:"/Users/yangmingzhou/www/www/themes/1hdshop/library/icat1.lbi";i:11;s:64:"/Users/yangmingzhou/www/www/themes/1hdshop/library/cat_goods.lbi";i:12;s:62:"/Users/yangmingzhou/www/www/themes/1hdshop/library/ibeand1.lbi";i:13;s:60:"/Users/yangmingzhou/www/www/themes/1hdshop/library/icat2.lbi";i:14;s:62:"/Users/yangmingzhou/www/www/themes/1hdshop/library/ibeand2.lbi";i:15;s:60:"/Users/yangmingzhou/www/www/themes/1hdshop/library/icat3.lbi";i:16;s:62:"/Users/yangmingzhou/www/www/themes/1hdshop/library/ibeand3.lbi";i:17;s:60:"/Users/yangmingzhou/www/www/themes/1hdshop/library/icat4.lbi";i:18;s:62:"/Users/yangmingzhou/www/www/themes/1hdshop/library/ibeand4.lbi";i:19;s:60:"/Users/yangmingzhou/www/www/themes/1hdshop/library/icat5.lbi";i:20;s:62:"/Users/yangmingzhou/www/www/themes/1hdshop/library/ibeand5.lbi";i:21;s:60:"/Users/yangmingzhou/www/www/themes/1hdshop/library/icat6.lbi";i:22;s:62:"/Users/yangmingzhou/www/www/themes/1hdshop/library/ibeand6.lbi";i:23;s:60:"/Users/yangmingzhou/www/www/themes/1hdshop/library/icat7.lbi";i:24;s:62:"/Users/yangmingzhou/www/www/themes/1hdshop/library/ibeand7.lbi";i:25;s:60:"/Users/yangmingzhou/www/www/themes/1hdshop/library/icat8.lbi";i:26;s:62:"/Users/yangmingzhou/www/www/themes/1hdshop/library/ibeand8.lbi";i:27;s:67:"/Users/yangmingzhou/www/www/themes/1hdshop/library/index_footer.lbi";}s:7:"expires";i:1408591738;s:8:"maketime";i:1408588138;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php exit;?>a:3:{s:8:"template";a:28:{i:0;s:52:"/Users/yangmingzhou/www/www/themes/1hdshop/index.dwt";i:1;s:67:"/Users/yangmingzhou/www/www/themes/1hdshop/library/index_header.lbi";i:2;s:60:"/Users/yangmingzhou/www/www/themes/1hdshop/library/imenu.lbi";i:3;s:61:"/Users/yangmingzhou/www/www/themes/1hdshop/library/iflash.lbi";i:4;s:66:"/Users/yangmingzhou/www/www/themes/1hdshop/library/ad_position.lbi";i:5;s:67:"/Users/yangmingzhou/www/www/themes/1hdshop/library/new_articles.lbi";i:6;s:66:"/Users/yangmingzhou/www/www/themes/1hdshop/library/order_query.lbi";i:7;s:68:"/Users/yangmingzhou/www/www/themes/1hdshop/library/invoice_query.lbi";i:8;s:68:"/Users/yangmingzhou/www/www/themes/1hdshop/library/recommend_new.lbi";i:9;s:61:"/Users/yangmingzhou/www/www/themes/1hdshop/library/ibeand.lbi";i:10;s:60:"/Users/yangmingzhou/www/www/themes/1hdshop/library/icat1.lbi";i:11;s:64:"/Users/yangmingzhou/www/www/themes/1hdshop/library/cat_goods.lbi";i:12;s:62:"/Users/yangmingzhou/www/www/themes/1hdshop/library/ibeand1.lbi";i:13;s:60:"/Users/yangmingzhou/www/www/themes/1hdshop/library/icat2.lbi";i:14;s:62:"/Users/yangmingzhou/www/www/themes/1hdshop/library/ibeand2.lbi";i:15;s:60:"/Users/yangmingzhou/www/www/themes/1hdshop/library/icat3.lbi";i:16;s:62:"/Users/yangmingzhou/www/www/themes/1hdshop/library/ibeand3.lbi";i:17;s:60:"/Users/yangmingzhou/www/www/themes/1hdshop/library/icat4.lbi";i:18;s:62:"/Users/yangmingzhou/www/www/themes/1hdshop/library/ibeand4.lbi";i:19;s:60:"/Users/yangmingzhou/www/www/themes/1hdshop/library/icat5.lbi";i:20;s:62:"/Users/yangmingzhou/www/www/themes/1hdshop/library/ibeand5.lbi";i:21;s:60:"/Users/yangmingzhou/www/www/themes/1hdshop/library/icat6.lbi";i:22;s:62:"/Users/yangmingzhou/www/www/themes/1hdshop/library/ibeand6.lbi";i:23;s:60:"/Users/yangmingzhou/www/www/themes/1hdshop/library/icat7.lbi";i:24;s:62:"/Users/yangmingzhou/www/www/themes/1hdshop/library/ibeand7.lbi";i:25;s:60:"/Users/yangmingzhou/www/www/themes/1hdshop/library/icat8.lbi";i:26;s:62:"/Users/yangmingzhou/www/www/themes/1hdshop/library/ibeand8.lbi";i:27;s:67:"/Users/yangmingzhou/www/www/themes/1hdshop/library/index_footer.lbi";}s:7:"expires";i:1408599771;s:8:"maketime";i:1408596171;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -1266,10 +1266,11 @@ function clock(key)
     </form>
     <div id="ECS_ORDER_QUERY">
           </div>
-  </div>		 <p class="dingdan">您也可以<a href="user.php" target="_blank">登录</a>后进入<a href="user.php?act=order_list" target="_blank">订单中心</a></p>
+  </div>
+		 <p class="dingdan">您也可以<a href="user.php" target="_blank">登录</a>后进入<a href="user.php?act=order_list" target="_blank">订单中心</a></p>
 		</div>
 		<div id="con_two_2" style="display:none;">
-		  		</div>
+		                  		</div>
 	  </div>
 	</div>  
 </div>
@@ -1504,14 +1505,14 @@ function clock(key)
 <li>
 <a title="男装品牌二" href="brand.php?id=11"><img src="data/brandlogo/1359833007919126421.jpg" /></a>
 </li>
-</ul></div>
+	     </ul></div>
 <div class="floor floor_1" id="floor_1" lazyImg="y">
 <div class="floorCon">
 <div class="fl floorLeft">
 <h2><a href="#" target="_blank">1F 美妆、珠宝、钟表</a></h2>
 554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:2:"15";s:3:"num";s:1:"0";}554fcae493e564ee0dc75bdf2ebf94ca 
 <ul>
-   
+    
       		  <li><a href="category.php?id=61" title="运动鞋"><span>运动鞋</span></a></li>
 		  
        		  <li><a href="category.php?id=68" title="复古鞋/板鞋"><span>复古鞋/板鞋</span></a></li>
@@ -1687,14 +1688,14 @@ function clock(key)
 <li>
 <a title="男装品牌二" href="brand.php?id=11"><img src="data/brandlogo/1359833007919126421.jpg" /></a>
 </li>
-</ul></div>
+	     </ul></div>
 <div class="floor floor_2">
 <div class="floorCon">
 <div class="fl floorLeft">
 <h2><a href="#" target="_blank">2F 女装、男装、内衣</a></h2>
 554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:2:"17";s:3:"num";s:1:"0";}554fcae493e564ee0dc75bdf2ebf94ca 
 <ul>
-   
+    
       		  <li><a href="category.php?id=6" title="热门商品"><span>热门商品</span></a></li>
 		  
        		  <li><a href="category.php?id=17" title="T恤"><span>T恤</span></a></li>
@@ -1865,14 +1866,14 @@ function clock(key)
 <li>
 <a title="男装品牌二" href="brand.php?id=11"><img src="data/brandlogo/1359833007919126421.jpg" /></a>
 </li>
-</ul></div>
+	     </ul></div>
 <div class="floor floor_3">
 <div class="floorCon">
 <div class="fl floorLeft">
 <h2><a href="#" target="_blank">3F 鞋靴、运动、箱包</a></h2>
 554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:2:"18";s:3:"num";s:1:"0";}554fcae493e564ee0dc75bdf2ebf94ca 
 <ul>
-   
+    
       		  <li><a href="category.php?id=61" title="运动鞋"><span>运动鞋</span></a></li>
 		  
        		  <li><a href="category.php?id=68" title="复古鞋/板鞋"><span>复古鞋/板鞋</span></a></li>
@@ -2048,14 +2049,14 @@ function clock(key)
 <li>
 <a title="男装品牌二" href="brand.php?id=11"><img src="data/brandlogo/1359833007919126421.jpg" /></a>
 </li>
-</ul></div>
+	     </ul></div>
 <div class="floor floor_4">
 <div class="floorCon">
 <div class="fl floorLeft">
 <h2><a href="#" target="_blank">4F 家居、家纺、建材</a></h2>
 554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:2:"19";s:3:"num";s:1:"0";}554fcae493e564ee0dc75bdf2ebf94ca 
 <ul>
-   
+    
       		  <li><a href="category.php?id=6" title="热门商品"><span>热门商品</span></a></li>
 		  
        		  <li><a href="category.php?id=17" title="T恤"><span>T恤</span></a></li>
@@ -2226,14 +2227,14 @@ function clock(key)
 <li>
 <a title="男装品牌二" href="brand.php?id=11"><img src="data/brandlogo/1359833007919126421.jpg" /></a>
 </li>
-</ul></div>
+	     </ul></div>
 <div class="floor floor_5">
 <div class="floorCon">
 <div class="fl floorLeft">
 <h2><a href="#" target="_blank">5F 数码、家电</a></h2>
 554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:2:"20";s:3:"num";s:1:"0";}554fcae493e564ee0dc75bdf2ebf94ca 
 <ul>
-   
+    
       		  <li><a href="category.php?id=61" title="运动鞋"><span>运动鞋</span></a></li>
 		  
        		  <li><a href="category.php?id=68" title="复古鞋/板鞋"><span>复古鞋/板鞋</span></a></li>
@@ -2409,14 +2410,14 @@ function clock(key)
 <li>
 <a title="男装品牌二" href="brand.php?id=11"><img src="data/brandlogo/1359833007919126421.jpg" /></a>
 </li>
-</ul></div>
+	     </ul></div>
 <div class="floor floor_6">
 <div class="floorCon">
 <div class="fl floorLeft">
 <h2><a href="#" target="_blank">6F 母婴之家</a></h2>
 554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:2:"21";s:3:"num";s:1:"0";}554fcae493e564ee0dc75bdf2ebf94ca 
 <ul>
-   
+    
       		  <li><a href="category.php?id=6" title="热门商品"><span>热门商品</span></a></li>
 		  
        		  <li><a href="category.php?id=17" title="T恤"><span>T恤</span></a></li>
@@ -2587,14 +2588,14 @@ function clock(key)
 <li>
 <a title="男装品牌二" href="brand.php?id=11"><img src="data/brandlogo/1359833007919126421.jpg" /></a>
 </li>
-</ul></div>
+	     </ul></div>
 <div class="floor floor_7">
 <div class="floorCon">
 <div class="fl floorLeft">
 <h2><a href="#" target="_blank">7F 图书、音像</a></h2>
 554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:2:"22";s:3:"num";s:1:"0";}554fcae493e564ee0dc75bdf2ebf94ca 
 <ul>
-   
+    
       		  <li><a href="category.php?id=61" title="运动鞋"><span>运动鞋</span></a></li>
 		  
        		  <li><a href="category.php?id=68" title="复古鞋/板鞋"><span>复古鞋/板鞋</span></a></li>
@@ -2770,14 +2771,14 @@ function clock(key)
 <li>
 <a title="男装品牌二" href="brand.php?id=11"><img src="data/brandlogo/1359833007919126421.jpg" /></a>
 </li>
-</ul></div>
+	     </ul></div>
 <div class="floor floor_8">
 <div class="floorCon">
 <div class="fl floorLeft">
 <h2><a href="#" target="_blank">8F 保健、滋补、器械</a></h2>
 554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:2:"23";s:3:"num";s:1:"0";}554fcae493e564ee0dc75bdf2ebf94ca 
 <ul>
-   
+    
       		  <li><a href="category.php?id=6" title="热门商品"><span>热门商品</span></a></li>
 		  
        		  <li><a href="category.php?id=17" title="T恤"><span>T恤</span></a></li>
@@ -2953,7 +2954,7 @@ function clock(key)
 ����վ�㣺
 <a href="http://www.ecshop.co/" title="ecshopģ��" >ecshopģ��</a>
 <a href="http://www.zuimoban.com/" title="��ģ��" >��ģ��</a>
-</div><script>document.write ('<' + '/d' + 'i' +   'v>');</script></ul>
+</div><script>document.write ('<' + '/d' + 'i' +   'v>');</script> </ul>
 </div>
     <div class="blank"></div>
 	<div class="footer_banner">

@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:9:{i:0;s:55:"/Users/yangmingzhou/www/www/themes/1hdshop/category.dwt";i:1;s:66:"/Users/yangmingzhou/www/www/themes/1hdshop/library/page_header.lbi";i:2;s:62:"/Users/yangmingzhou/www/www/themes/1hdshop/library/ur_here.lbi";i:3;s:60:"/Users/yangmingzhou/www/www/themes/1hdshop/library/top10.lbi";i:4;s:62:"/Users/yangmingzhou/www/www/themes/1hdshop/library/history.lbi";i:5;s:65:"/Users/yangmingzhou/www/www/themes/1hdshop/library/goods_list.lbi";i:6;s:60:"/Users/yangmingzhou/www/www/themes/1hdshop/library/pages.lbi";i:7;s:59:"/Users/yangmingzhou/www/www/themes/1hdshop/library/help.lbi";i:8;s:66:"/Users/yangmingzhou/www/www/themes/1hdshop/library/page_footer.lbi";}s:7:"expires";i:1408591754;s:8:"maketime";i:1408588154;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php exit;?>a:3:{s:8:"template";a:9:{i:0;s:55:"/Users/yangmingzhou/www/www/themes/1hdshop/category.dwt";i:1;s:66:"/Users/yangmingzhou/www/www/themes/1hdshop/library/page_header.lbi";i:2;s:62:"/Users/yangmingzhou/www/www/themes/1hdshop/library/ur_here.lbi";i:3;s:60:"/Users/yangmingzhou/www/www/themes/1hdshop/library/top10.lbi";i:4;s:62:"/Users/yangmingzhou/www/www/themes/1hdshop/library/history.lbi";i:5;s:65:"/Users/yangmingzhou/www/www/themes/1hdshop/library/goods_list.lbi";i:6;s:60:"/Users/yangmingzhou/www/www/themes/1hdshop/library/pages.lbi";i:7;s:59:"/Users/yangmingzhou/www/www/themes/1hdshop/library/help.lbi";i:8;s:66:"/Users/yangmingzhou/www/www/themes/1hdshop/library/page_footer.lbi";}s:7:"expires";i:1408600115;s:8:"maketime";i:1408596515;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -1436,7 +1436,8 @@ var compare_no_goods = "您没有选定任何需要比较的商品或者比较�
 var btn_buy = "购买";
 var is_cancel = "取消";
 var select_spe = "请选择商品属性";
-</script>  <form name="selectPageForm" action="/www/category.php" method="get">
+</script>  
+<form name="selectPageForm" action="/www/category.php" method="get">
         <!--分页 { -->
         <div class="pager">
 		<div class="pagerjump">
@@ -1463,7 +1464,8 @@ function selectPage(sel)
   sel.form.submit();
 }
 //-->
-</script>  <div class="blank"></div>
+</script>
+  <div class="blank"></div>
  <div class="searchColMainItem searchBottom">
 		<div class="searchBox clearfix">
 		<label>重新搜索：</label>
