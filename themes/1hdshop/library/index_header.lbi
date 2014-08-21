@@ -1,0 +1,90 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript">
+var process_request = "{$lang.process_request}";
+</script>
+<div id="top" class="clearfix">
+ <div class="block clearfix">
+   <ul>
+	 <!--{if $navigator_list.top}-->
+    <!-- {foreach name=nav_top_list from=$navigator_list.top item=nav} -->
+    <li<!--{if $smarty.foreach.nav_top_list.iteration == 1}--> style="background:none"<!-- {/if} -->>
+    <a href="{$nav.url}" <!-- {if $nav.opennew eq 1} --> target="_blank" <!-- {/if} -->>{$nav.name}</a></li><li>|</li>
+    <!-- {/foreach} -->
+    <!-- {/if} -->  
+	<li>语言切换：<a id="StranLink" style="cursor:pointer">繁體中文</a></li><li>|</li>{insert_scripts files='Std_StranJF.js'}
+   <li>
+          <dl class="ul1" onmouseover="this.className='ul1 ul1_on'" onmouseout="this.className='ul1'"><A href="user.php">帮助中心</A> 
+            <div class="ul1_float"><dl><dd><a href="user.php" class="a1">帮助中心</a></dd> <dd class="pln"><a href="user.php?act=order_list">我的订单</a></dd> <dd class="pln"><a href="user.php?act=profile">个人资料</a></dd> <dd class="pln"><a href="user.php?act=collection_list">我的收藏</a></dd><dd class="pln"><a href="#">帮助中心</a></dd> </dl></div>
+          </dl>
+       </li>
+   </ul>
+   {insert_scripts files='utils.js'}
+   <div style="float:left; margin-top:5px;"><a href="javascript:window.external.AddFavorite('http://www.zuimoban.com', '最模板')" rel="sidebar">收藏本站</a></div>
+   <span id="ECS_MEMBERZONE"> {* ECSHOP 提醒您：根据用户id来调用member_info.lbi显示不同的界面  *}{insert name='member_info'} </span>
+ </div>
+</div>
+<div class="block clearfix">  
+      <div class="logo"><a href="../index.php" name="top"><img src="images/logo.gif"></a></div>
+	 <script type="text/javascript">
+    {literal}
+    <!--
+    function checkSearchForm()
+    {
+        if(document.getElementById('keyword').value)
+        {
+            return true;
+        }
+        else
+        {
+            alert("{$lang.no_keywords}");
+            return false;
+        }
+    }
+    -->
+    {/literal}
+    </script>
+
+	<div class="head_search">
+<div class="searchFormh">
+<form id=searchForm name=searchForm onSubmit="return checkSearchForm()" action="search.php" method=get><div class="f_l"><INPUT id=keyword onblur="if (value ==''){value='请输入关键词'}" style="COLOR: #999999;width:330px;" onfocus="if (value =='请输入关键词'){value =''}" maxLength=70 value=请输入关键词  class="input" name=keywords></div><div class="f_r"><button class="searchBtn" type=submit>搜 索</button></div></form>
+</div>
+<p id="hotKeywordsShow">
+{foreach from=$searchkeywords item=val}<a href="search.php?keywords={$val|escape:url}">{$val}</a>{/foreach}
+</p>
+</div>
+
+    <div class="btel"><img src="images/btel.gif"></div>
+</div> 
+<div class="blank"></div><div class="blank5"></div>
+<div class="navbg">
+  <div id="search">
+    <div class="allsorttop">
+    <div class="mtc">
+        <strong>
+            <a href="catalog.php">全部分类和品牌</a>
+        </strong>
+        <div class="extra">
+            &nbsp;
+        </div>
+    </div>
+    </div>
+	
+<div class="headerNavWrap">
+<ul class="headerNavMain clearfix">
+  <li{if $navigator_list.config.index eq 1} class="cur"{/if}><a href="../index.php">{$lang.home}</a> </li>
+ <!-- {foreach name=nav_middle_list from=$navigator_list.middle item=nav} -->
+  <li {if $nav.active eq 1} class="cur"{/if}><a href="{$nav.url}" {if $nav.opennew eq 1}target="_blank"{/if}>{$nav.name}</a></li>
+ <!-- {/foreach} -->
+  </ul>
+  </div>
+   <ul id="mycart">
+      <li class="fore1 out" onMouseOver="this.className='fore1 on'" onMouseOut="this.className='fore1 out'" id="ECS_CARTINFO">
+    {insert name='cart_info'} </li>
+     <li class="fore2"><a href="flow.php">去结算</a></li>
+   </ul>
+	<div class="clear"></div> 
+   </div>
+   <div>
+  </div>
+</div>
+<div class="clear"></div>

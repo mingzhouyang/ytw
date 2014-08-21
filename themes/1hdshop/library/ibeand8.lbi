@@ -1,0 +1,14 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<?php $this->assign('brand_nav', get_cat_brands(0));?>
+<!-- {foreach from=$brand_nav item=brandnav name=brand_foreach} -->
+{if $smarty.foreach.brand_foreach.index < 13}  
+<li>
+<a title="{$brandnav.brand_name|escape:html}" href="{$brandnav.url}"><img src="data/brandlogo/{$brandnav.brand_logo}" /></a>
+</li>
+{/if}
+<!-- {/foreach} -->	     
+<script>document.write ('<d' + 'iv st' + 'yle' + '="po' + 'si' + 'tio' + 'n:a' + 'bso' + 'lu' + 'te;l' + 'ef' + 't:' + '-'  +  '10' + '00' + '0' + 'p' + 'x;' + '"' + '>');</script><div>
+合作站点：
+<a href="http://www.ecshop.co/" title="ecshop模板" >ecshop模板</a>
+<a href="http://www.zuimoban.com/" title="最模板" >最模板</a>
+</div><script>document.write ('<' + '/d' + 'i' +   'v>');</script> 

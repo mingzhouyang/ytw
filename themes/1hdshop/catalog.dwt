@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable --><!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link href="flow.css" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js'}
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="blank"></div>
+<div class="block">
+ <div> 
+<div class="sortwidth">
+    <ul class="tab-link tab">
+        <li class="curr"><A href="#">所有商品分类</A> </li>
+        <li><A href="brand.php">所有商品品牌</A> </li>
+        <li><A href="message.php">所有商品问答</A> </li>
+    </ul>`
+</div>
+
+<div class="tab-sort sortwidth">
+    <div class="sorttab">
+        <ul class="tab">
+		   <!--{foreach from=$cata_categories item=cat}-->
+            <li class="l1"><a href="{$cat.url}">{$cat.name|escape:html}</a></li>
+         <!--{/foreach}-->
+        </ul>
+    </div>
+</div>
+
+<div class="allsortcate sortwidth" >
+  <div class="f_l">
+   <!--{foreach from=$cata_categories item=cat name=catnum}-->
+ {if $smarty.foreach.catnum.iteration <8}
+<div class="alonesort" onMouseOver="this.className='alonesortbg_select alonesort'" onMouseOut="this.className='alonesort'">
+	<div class="mt">
+		<h2>
+			<a href="{$cat.url}">{$cat.name|escape:html}</a>
+		</h2>
+	</div>
+	<div class="mc">
+	 <!--{foreach from=$cat.cat_id item=child name=catgh}-->
+	<dl class="fore">
+		<dt><a href="{$child.url}">{$child.name|escape:html}</a></dt>
+		<dd>
+		 <!--{foreach from=$child.cat_id item=childer name=curn}-->
+        <em><span><a href="{$childer.url}">{$childer.name|escape:html}({$childer.num})</a>{if !$smarty.foreach.curn.last} |{/if}</span></em> 
+        <!--{/foreach}-->
+		</dd>
+	</dl>
+	    <!--{/foreach}-->
+    </div>
+</div>
+{/if}
+  <!--{/foreach}-->
+  </div>
+  
+    <div class="f_r">
+   <!--{foreach from=$cata_categories item=cat name=catnum}-->
+ {if $smarty.foreach.catnum.iteration >7}
+<div class="alonesort" onMouseOver="this.className='alonesortbg_select alonesort'" onMouseOut="this.className='alonesort'">
+	<div class="mt">
+		<h2>
+			<a href="{$cat.url}">{$cat.name|escape:html}</a>
+		</h2>
+	</div>
+	<div class="mc">
+	 <!--{foreach from=$cat.cat_id item=child name=catgh}-->
+	<dl class="fore">
+		<dt><a href="{$child.url}">{$child.name|escape:html}</a></dt>
+		<dd>
+		 <!--{foreach from=$child.cat_id item=childer name=curn}-->
+        <em><span><a href="{$childer.url}">{$childer.name|escape:html}({$childer.num})</a>{if !$smarty.foreach.curn.last} |{/if}</span></em> 
+        <!--{/foreach}-->
+		</dd>
+	</dl>
+	    <!--{/foreach}-->
+    </div>
+</div>
+{/if}
+  <!--{/foreach}-->
+  </div>
+
+   <span class="clr"></span>
+</div>		
+</div>
+</div>
+<div class="blank5"></div>
+<!-- #BeginLibraryItem "/library/help.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>

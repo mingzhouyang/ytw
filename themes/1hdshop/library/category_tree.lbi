@@ -1,0 +1,24 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<?php $this->assign('categories', get_categories_tree());?>
+<div class="classtit"><b>分类筛选</b></div>
+ <div class="box">
+ <div class="box_1">
+  <div id="category_tree"> 
+    <!--{foreach from=$categories item=cat}-->
+     <dl>
+     <dt><div {if $category eq $cat.id}class="chov"{else}class="clink"{/if}><a href="{$cat.url}">{$cat.name|escape:html}</a></div></dt>
+     <!--{if $topcat_id eq $cat.id}--> 
+     <!--{foreach from=$cat.cat_id item=child}-->
+     <dd><div {if $category eq $child.id}class="d2hov"{else}class="d2link"{/if}><a href="{$child.url}">{$child.name|escape:html}</a></div></dd>
+       <!--{foreach from=$child.cat_id item=childer}-->
+       <dd><div {if $category eq $childer.id}class="d3hov"{else}class="d3link"{/if}><a href="{$childer.url}">{$childer.name|escape:html}</a></div></dd>   
+       <!--{/foreach}-->
+       
+     <!--{/foreach}-->
+       <!--{/if}--> 
+       </dl>
+    <!--{/foreach}--> 
+  </div>
+ </div>
+</div>
+<div class="blank5"></div>

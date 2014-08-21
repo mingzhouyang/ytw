@@ -1,0 +1,5 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!--{foreach from=$articles item=article_item name=curnew}-->
+<a href="{$article_item.url}" title="{$article_item.title|escape:html}" target="_blank">{$article_item.short_title}</a>
+<!--{/foreach}-->
+<p class="tr"><a href="{$articles_cat.url}" target="_blank">更多</a></p>

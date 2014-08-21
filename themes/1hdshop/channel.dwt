@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable --><!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link href="channel.css" rel="stylesheet" type="text/css" />
+<!-- {if $cat_style} -->
+<link href="{$cat_style}" rel="stylesheet" type="text/css" />
+<!-- {/if} -->
+{* 包含脚本文件 *}
+{insert_scripts files='common.js,global.js'}
+<script type="text/javascript" src="js/site.js"></script>
+<script type="text/javascript" src="js/scrollpic.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+var isWidescreen=screen.width>=1280;
+if (isWidescreen){document.getElementsByTagName("body")[0].className="w1200";}
+</script>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="blank5"></div>
+<div class="block clearfix">
+  <!--left start-->
+<div class="AreaL">
+	<div id="beautycare">
+	<!--{foreach from=$categories item=cat}-->
+	{if $category eq $cat.id}
+	<h1 class="beautytitle">{$cat.name|escape:html}</h1>
+	<!--{if $topcat_id eq $cat.id}--> 
+		 <!--{foreach from=$cat.cat_id item=child}-->
+	<div class="facecare">
+		<h2 class="facetitle"> <a href="{$child.url}">{$child.name|escape:html}</a></h2>
+		<ul style="overflow: hidden;">
+		   <!--{foreach from=$child.cat_id item=childer name=curn}-->
+			<li>    <a href="{$childer.url}">{$childer.name|escape:html}</a></li>
+			<!--{if !$smarty.foreach.curn.last}--><li>|</li><!--{/if}--> 
+			<!--{/foreach}-->
+			<div class="clear"></div>
+	
+		</ul>
+	</div>
+	<!--{/foreach}--> 
+	<!--{/if}--> 
+	{/if}
+	<!--{/foreach}--> 
+	</div>
+     <div class="blank5"></div>
+     <!-- #BeginLibraryItem "/library/top10.lbi" --><!-- #EndLibraryItem -->
+     <!-- #BeginLibraryItem "/library/history.lbi" --><!-- #EndLibraryItem -->
+    <!--AD end-->
+  </div>
+  <!--left end-->
+  <!--right start-->
+     <div id="middle" class="f_l">
+ <div id="fade_focus">
+           {if $ecy_adflash}
+            <div class="loading">{foreach from=$ecy_adflash item=item name=fnum}{if $smarty.foreach.fnum.first}<a href="{$item.site_url}" target="_blank"><img src="data/ecyclasspic/{$item.brand_logo}" alt="{$item.brand_name}" /></a>{/if}{/foreach}</div>
+            <ul>     	
+                   {foreach from=$ecy_adflash item=item}
+                   <li><a href="{$item.site_url}" target="_blank"><img src="data/ecyclasspic/{$item.brand_logo}" alt="{$item.brand_name}" /></a></li>
+                  {/foreach}
+            </ul>
+            {else}
+             请在后台封面页扩展上传图片
+            {/if}
+       </div>
+       <!--播放器结束--> 
+<div class="lowarea mt10">
+<div class="f_l lowareanav pointer"id="leftbtn1" ><a href="javascript:void(0);" ><img src="images/index_pr.gif"/></a></div>
+	                      <div class="f_l lowareabox" id="rollphoto1">
+                                  <div class="panel">
+									<ul>
+							{foreach from=$ecy_adflash1 item=item}
+						   <li><a href="{$item.site_url}" target="_blank"><img src="data/ecyclasspic/{$item.brand_logo}" alt="{$item.brand_name}" /></a></li>
+						  {/foreach}
+						  </ul>
+								</div>
+	                      </div>
+<div class="fr lowareanav pointer" id="rightbtn1"><a href="javascript:void(0);" ><img src="images/index_next.gif"/></a></div>
+			<SCRIPT language=javascript type=text/javascript>
+							var scrollPic_01 = new ScrollPic();
+							scrollPic_01.scrollContId   = "rollphoto1"; //内容容器ID
+							scrollPic_01.arrLeftId      = "leftbtn1";//左箭头ID
+							scrollPic_01.arrRightId     = "rightbtn1"; //右箭头ID
+							if (screen.width >= 1280){scrollPic_01.frameWidth    = 695;}else {scrollPic_01.frameWidth     = 480;}
+							scrollPic_01.pageWidth      = 120; //翻页宽度	
+							scrollPic_01.speed          = 10; //移动速度(单位毫秒，越小越快)
+							scrollPic_01.space          = 10; //每次移动像素(单位px，越大越快)
+							scrollPic_01.autoPlay       = true; //自动播放
+							scrollPic_01.autoPlayTime   = 3; //自动播放间隔时间(秒)
+							scrollPic_01.initialize(); //初始化
+                        </SCRIPT>
+</div>
+
+<div class="midcolumn mt10">
+    <div class="midcolumntitle">
+        <h3 class="newproduct">每周推荐</h3>
+        <p class="more color_gary"><a href="#" target="_blank">更多</a></p>
+    </div>
+    <div class="newimgs mt10" style="position:relative">
+	 	   <!--{foreach from=$best_goods item=goods name=curn}-->
+        <div class="newsimgeg f_l">
+           {if $smarty.foreach.curn.first}<div class="channel_tagsprites9"></div>{/if}
+                <a class="newproimg"  href="{$goods.url}" title="{$goods.name|escape:html}" target="_blank"><img src="{$goods.thumb}" alt="{$goods.name|escape:html}" /></a>
+                <div class="newtxt">
+                    <div class="newtxtitle">
+	                    <a href="{$goods.url}" title="{$goods.name|escape:html}" target="_blank">{$goods.name|escape:html}</a>                    </div>
+                    <p><span class="proprice"><!-- {if $goods.promote_price neq ""} -->{$goods.promote_price}<!-- {else}-->{$goods.shop_price}<!--{/if}--></span><span class="propricelinethrough">{$goods.market_price}</span>                    </p>
+                </div>
+            </div>
+           <!--{/foreach}--> 
+            <div class="clear"></div>
+        </div>
+    </div>
+	
+	    <?php $this->assign('get_child_list',get_child_treec($this->_var['category']));?>
+  <!--{foreach from=$get_child_list item=cname}-->
+  <div class="midcolumn mt10">
+    <div class="midcolumntitle">
+        <h3 class="newproduct">{$cname.name}</h3>
+        <p class="more color_gary"><a href="category.php?id={$cname.id}" target="_blank">更多</a></p>
+    </div>
+    <div class="newimgs mt10" style="position:relative">
+	<?php $this->assign("cat_goods",ecy_cat_goods($GLOBALS['smarty']->_var['cname']['id'],5));?>
+	<!--{foreach from=$cat_goods item=goods name=cur}-->
+        <div class="newsimgeg f_l">
+               <a class="newproimg"  href="{$goods.url}" title="{$goods.name|escape:html}" target="_blank"><img src="{$goods.thumb}" alt="{$goods.name|escape:html}" /></a>
+                <div class="newtxt">
+                    <div class="newtxtitle">
+	                     <a href="{$goods.url}" title="{$goods.name|escape:html}" target="_blank">{$goods.name|escape:html}</a>                    </div>
+                     <p><span class="proprice"><!-- {if $goods.promote_price neq ""} -->{$goods.promote_price}<!-- {else}-->{$goods.shop_price}<!--{/if}--></span><span class="propricelinethrough">{$goods.market_price}</span></p>
+                </div>
+        </div>
+          <!--{/foreach}-->
+            <div class="clear"></div>
+      </div>
+    </div>
+	 <!--{/foreach}-->
+ </div>
+              
+<div id="sidebarright"  class="f_r">
+<div class="hotranking hotrankingtime">
+    <div class="hotitle"><h4 class="limitime">限时抢购</h4></div>
+    <div class="timecon">
+        <div class="timebg">
+            <span><input type="text" value="" id="_lefttime"></span><span><input type="text" value="" id="_lefttime1"></span><span><input type="text" value="" id="_lefttime2"></span>
+        </div>
+		  <SCRIPT LANGUAGE="Javascript">
+                            function _fresh() {
+                                var endtime = new Date("October 15, 2031 00:00:00");
+                                var nowtime = new Date();
+                                var leftsecond = parseInt((endtime.getTime() - nowtime.getTime()) / 1000);
+                                if (leftsecond < 0) {
+                                    leftsecond = 0;
+                                };
+                                __d = parseInt(leftsecond / 3600 / 24);
+                                __h = parseInt((leftsecond / 3600) % 24);
+                                __m = parseInt((leftsecond / 60) % 24);
+                                __s = parseInt(leftsecond % 60);
+                                __all = __h + "小时" + __m + "分" + __s + "秒";
+                                __all = __all.replace(/([0-9]{1})/g, '$1');
+                                document.getElementById("_lefttime").value = __h;
+                                document.getElementById("_lefttime1").value = __m;
+                                document.getElementById("_lefttime2").value = __s;
+                            };
+                            _fresh();
+                            setInterval(_fresh, 1000);
+           </SCRIPT>
+<!--{foreach from=$promotion_goods item=goods name=goods name=curn}-->       
+        <div class="timeproduct{if $smarty.foreach.curn.last} timeproductlast{/if}">
+            <div class="channel_timeapdiv"></div>
+            <div class="timeproductimg">
+			  <a href="{$goods.url}" title="{$goods.name|escape:html}" class="timeproductimgbig" target="_blank"><img  src="{$goods.thumb}" alt="{$goods.name|escape:html}" width="115" height="115" /></a>
+			  </div>
+              <p class="timeproductxt color_gary"><a href="{$goods.url}" title="{$goods.name|escape:html}" target="_blank">{$goods.name|escape:html}</a></p>
+			
+            <p class="timeproductxt color_gary">市场价：{$goods.market_price}</p>
+
+            <p class="timeproductxt color_gary">抢购价：<span class="buyingprice">{$goods.promote_price}</span></p>
+        </div>
+<!--{/foreach}--> 
+		
+    </div>
+    <!--timecon-->
+</div>
+
+			
+		{foreach from=$ecy_adflash2 item=item}
+						   <div class="smallpic mt10"><a href="{$item.site_url}" target="_blank"><img src="data/ecyclasspic/{$item.brand_logo}" alt="{$item.brand_name}" style="width:203px;" /></a></div>
+	 {/foreach}
+							
+<div class="hotranking mt10">
+    <div class="hotitle">本周热销单品</div>
+    <div class="hotimgs">
+	<!--{foreach from=$hot_goods item=goods name=cur}-->
+        <div class="hoteg">
+              <div class="hotimg"><a class="hotimgsmall" href="{$goods.url}"><img src="{$goods.thumb}" alt="{$goods.goods_name}" width="40" height="40" /></a></div>
+            <div class="hotimgtxt">          
+                <div class="newtxtitle">
+                  <a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.name}</a>
+                </div>
+                <p class="hotprice"><!-- {if $goods.promote_price neq ""} -->{$goods.promote_price}<!-- {else}-->{$goods.shop_price}</font><!--{/if}--></p>
+            </div>
+            <div class="clear"></div>
+        </div>
+		<!--{/foreach}-->
+    </div>
+</div>
+<div class="hotranking mt10">
+    <div class="hotitle">最新排行</div>
+    <div class="hotimgs">
+       	<!--{foreach from=$new_goods item=goods name=cur}-->
+        <div class="hoteg">
+              <div class="hotimg"><a class="hotimgsmall" href="{$goods.url}"><img src="{$goods.thumb}" alt="{$goods.goods_name}" width="40" height="40" /></a></div>
+            <div class="hotimgtxt">          
+                <div class="newtxtitle">
+                  <a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.name}</a>
+                </div>
+                <p class="hotprice"><!-- {if $goods.promote_price neq ""} -->{$goods.promote_price}<!-- {else}-->{$goods.shop_price}</font><!--{/if}--></p>
+            </div>
+            <div class="clear"></div>
+        </div>
+		<!--{/foreach}-->
+    </div>
+</div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+	 
+</div>
+<div class="blank"></div>
+<!-- #BeginLibraryItem "/library/help.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+<script type="text/javascript" src="js/hotProduct.js"></script>
+</body>
+</html>

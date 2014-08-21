@@ -1,0 +1,911 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta property="qc:admins" content="73412725776117751776375" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" /> 
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link rel="alternate" type="application/rss+xml" title="RSS|{$page_title}" href="{$feed_url}" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link href="home.css" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js,index.js'}
+<script type="text/javascript" src="js/site.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/transport_ec.js"></script>
+<!--js start-->
+<script type="text/javascript">
+var URLPrefix = {};
+var headerType="base";
+var favorite="";
+var hostUrl="";
+var httpUrl="";
+var no3wUrl="";
+var simpleUrl="1mall";
+var chineseUrl="";
+var imagePath="";
+var currSiteId=1;
+var currBsSiteId=1;
+var currSiteType=2;
+var siteStyle=1;
+var siteFlag=1;
+var currDomain="";
+var oppositeDomain="";
+var busystock = "";
+var multiSearch="false";
+var isIndex = 0;
+var currVersionNum= 512555; //
+var currProvinceId=20;
+var lazyLoadImageObjArry = lazyLoadImageObjArry || [];
+var isFixTopNav = false
+var hotwordReadAdv = true;</script>
+<!--js end-->
+<?php 
+   require_once("themes/".$GLOBALS['_CFG']['template']."/diyfile.php");
+   $this->assign('TemplatePath','themes/'.$GLOBALS['_CFG']['template']);
+?>
+</head>
+<body>
+<script type="text/javascript">
+var isWidescreen=screen.width>=1280;
+if (isWidescreen){document.getElementsByTagName("body")[0].className="w1200";}
+</script>
+<!-- #BeginLibraryItem "/library/index_header.lbi" --><!-- #EndLibraryItem -->
+<div class="areabg">
+<div class="block clearfix">
+		 <div class="AreaiL">
+		  <!-- #BeginLibraryItem "/library/imenu.lbi" --><!-- #EndLibraryItem -->
+		</div>
+		<div class="f_l tsMain">
+<!-- #BeginLibraryItem "/library/iflash.lbi" --><!-- #EndLibraryItem --> 
+<div class="tsChannel">
+<div class="f_l panicBuy">
+<div class="wh3">
+<a href="#" target="_blank">天天疯抢 每日12:21开抢</a>
+</div>
+<!-- TemplateBeginEditable name="首页_天天疯抢图1" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+</div>
+<div class="f_l brandSale">
+<div class="wh3"><a href="#" target="_blank"></a></div>
+<div>
+<div class="imgl first">
+<!-- TemplateBeginEditable name="首页_天天疯抢图2" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+</div>
+<div class="imgl">
+<!-- TemplateBeginEditable name="首页_天天疯抢图3" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+</div>
+<div class="imgl">
+<!-- TemplateBeginEditable name="首页_天天疯抢图4" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+</div>
+
+</div>
+</div> </div>
+<div class="tsAd">
+<div class="imgl">
+<!-- TemplateBeginEditable name="首页_天天疯抢图5" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+</div> 
+<div class="imgl">
+<!-- TemplateBeginEditable name="首页_天天疯抢图6" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+</div>
+<div class="imgl">
+<!-- TemplateBeginEditable name="首页_天天疯抢图7" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+</div>
+
+</div>
+</div>
+<div class="f_l tsLeft">
+<ul class="policy" id="indexServiceId">
+<li><img alt="正品保障" title="正品保障" src="images/bz1.jpg"></li>
+<li><img alt="七天包退" title="七天包退" src="images/bz2.jpg"></li>
+<li><img alt="假一赔三" title="假一赔三" src="images/bz3.jpg"></li>
+</ul>
+<div class="tuangou">
+<h3>天豫团</h3>
+<!-- TemplateBeginEditable name="首页_团购广告" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<!--{if $group_buy_goods}-->
+<SCRIPT type="text/javascript">
+var Tday = new Array();
+var daysms = 24 * 60 * 60 * 1000
+var hoursms = 60 * 60 * 1000
+var Secondms = 60 * 1000
+var microsecond = 1000
+var DifferHour = -1
+var DifferMinute = -1
+var DifferSecond = -1
+function clock(key)
+  {
+   var time = new Date()
+   var hour = time.getHours()
+   var minute = time.getMinutes()
+   var second = time.getSeconds()
+   var timevalue = ""+((hour > 12) ? hour-12:hour)
+   timevalue +=((minute < 10) ? ":0":":")+minute
+   timevalue +=((second < 10) ? ":0":":")+second
+   timevalue +=((hour >12 ) ? " PM":" AM")
+   var convertHour = DifferHour
+   var convertMinute = DifferMinute
+   var convertSecond = DifferSecond
+   var Diffms = Tday[key].getTime() - time.getTime()
+   DifferHour = Math.floor(Diffms / daysms)
+   Diffms -= DifferHour * daysms
+   DifferMinute = Math.floor(Diffms / hoursms)
+   Diffms -= DifferMinute * hoursms
+   DifferSecond = Math.floor(Diffms / Secondms)
+   Diffms -= DifferSecond * Secondms
+   var dSecs = Math.floor(Diffms / microsecond)
+   
+   if(convertHour != DifferHour) a="<b>"+DifferHour+"</b>天";
+   if(convertMinute != DifferMinute) b="<b>"+DifferMinute+"</b>时";
+   if(convertSecond != DifferSecond) c="<b>"+DifferSecond+"</b>分"
+     d="<b>"+dSecs+"</b>秒"
+     if (DifferHour>0) {a=a} 
+     else {a=''}
+   document.getElementById("leftTime"+key).innerHTML ="剩:"+ a + b + c + d; //显示倒计时信息
+  }
+</SCRIPT>
+<!--{foreach from=$group_buy_goods item=goods key=key name=curn}-->
+{if $smarty.foreach.curn.iteration<2}
+<p class="buy"><a href="{$goods.url}" target="_blank">立即团</a><strong>¥{$goods.last_price}</strong><del>¥{$goods.market_price}</del></p>
+<p class="sellInfo">
+<span>已售:<b>{if $goods.isg_rs eq 1}{$goods.group_rs}{else}{$goods.valid_goods}{/if}</b>件</span>
+ <span class="sellAmout" id="leftTime{$key}">{$lang.please_waiting}</span>
+</p>
+  <SCRIPT type="text/javascript">
+		Tday[{$key}] = new Date("{$goods.gmt_end_time}");   
+		window.setInterval(function()     
+		{clock({$key});}, 1000);     
+  </SCRIPT>
+{/if}
+<!--{/foreach}-->
+<!--{/if}-->
+</div>
+	 <dl class="notice">
+		<dt>天豫商城公告</dt>
+		 <!-- #BeginLibraryItem "/library/new_articles.lbi" --><!-- #EndLibraryItem -->
+		</dl>
+   </div>
+   <div class="right_tab">
+	  <h2 id="two1" onmousemove="setTab('two',1,2)" class="hover" style="border-right:1px solid #ddd; width:105px">订单查询</h2>
+	  <h2 id="two2" onmousemove="setTab('two',2,2)">发货清单</h2>
+	  <div style="clear:both"></div>
+	  <div class="right_tab_box clearfix">
+		<div id="con_two_1">
+		 <!-- #BeginLibraryItem "/library/order_query.lbi" --><!-- #EndLibraryItem -->
+		 <p class="dingdan">您也可以<a href="user.php" target="_blank">登录</a>后进入<a href="user.php?act=order_list" target="_blank">订单中心</a></p>
+		</div>
+		<div id="con_two_2" style="display:none;">
+		  <!-- #BeginLibraryItem "/library/invoice_query.lbi" --><!-- #EndLibraryItem -->
+		</div>
+	  </div>
+	</div>  
+</div>
+</div>
+
+</div>
+
+<div class="block">
+<div class="floor floor_0" id="floor_0">
+<div class="floorCon">
+<div class="fl floorLeft">
+<h2><a href="search.php=intro=new" target="_blank">NEW 新品上市</a></h2>
+<!-- TemplateBeginEditable name="首页_新品上市左图" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<ul>
+{foreach from=$cat_rec[2] item=rec_data name=curn}
+{if $smarty.foreach.curn.iteration <11} 
+<li>
+<a href="category.php?id={$rec_data.cat_id}" title="{$rec_data.cat_name}" target="_blank">
+<span>{$rec_data.cat_name}</span>
+</a>
+</li>
+{/if}
+{/foreach}
+</ul>
+</div>
+<ul class="fl floorMain">
+<!-- #BeginLibraryItem "/library/recommend_new.lbi" --><!-- #EndLibraryItem -->
+</ul>
+<div class="fl floorRight">
+<!-- TemplateBeginEditable name="首页_新品上市右图1" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<!-- TemplateBeginEditable name="首页_新品上市右图2" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="首页_新品上市右图3" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="首页_新品上市右图4" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="首页_新品上市右图5" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+</div>
+</div>
+<ul class="brandList">
+<!-- #BeginLibraryItem "/library/ibeand.lbi" --><!-- #EndLibraryItem -->
+</ul></div>
+<div class="floor floor_1" id="floor_1" lazyImg="y">
+<div class="floorCon">
+<div class="fl floorLeft">
+<h2><a href="#" target="_blank">1F 美妆、珠宝、钟表</a></h2>
+<!-- TemplateBeginEditable name="首页_第一分类左图" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<ul>
+ <!-- #BeginLibraryItem "/library/icat1.lbi" --><!-- #EndLibraryItem -->
+</ul>
+</div>
+<ul class="fl floorMain">
+<!-- TemplateBeginEditable name="首页_第一分类产品" -->
+<!-- #BeginLibraryItem "/library/cat_goods.lbi" -->
+
+<!--{foreach from=$cat_goods item=goods}-->
+<li>
+<a href="{$goods.url}" title="{$goods.name|escape:html}" target="_blank">
+<img src="{$goods.thumb}" alt="{$goods.name|escape:html}" />
+</a>
+<a class="name" href="{$goods.url}" title="{$goods.name|escape:html}" target="_blank">
+{$goods.name|escape:html}
+</a>
+<p>
+<strong><!-- {if $goods.promote_price neq ""} -->{$goods.promote_price}<!-- {else}-->{$goods.shop_price}<!--{/if}--></strong>
+<del>{$goods.market_price}</del>
+</p>
+</li>
+ <!--{/foreach}-->
+
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+</ul>
+<div class="fl floorRight">
+<!-- TemplateBeginEditable name="首页_第一分类右图1" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<!-- TemplateBeginEditable name="首页_第一分类右图2" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<!-- TemplateBeginEditable name="首页_第一分类右图3" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<!-- TemplateBeginEditable name="首页_第一分类右图4" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<!-- TemplateBeginEditable name="首页_第一分类右图5" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+</div>
+</div>
+<ul class="brandList">
+<!-- #BeginLibraryItem "/library/ibeand1.lbi" --><!-- #EndLibraryItem -->
+</ul></div>
+<div class="floor floor_2">
+<div class="floorCon">
+<div class="fl floorLeft">
+<h2><a href="#" target="_blank">2F 女装、男装、内衣</a></h2>
+<!-- TemplateBeginEditable name="首页_第二分类左图" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<ul>
+ <!-- #BeginLibraryItem "/library/icat2.lbi" --><!-- #EndLibraryItem -->
+</ul>
+</div>
+<ul class="fl floorMain">
+<!-- TemplateBeginEditable name="首页_第二分类产品" -->
+<!-- #BeginLibraryItem "/library/cat_goods.lbi" -->
+
+<!--{foreach from=$cat_goods item=goods}-->
+<li>
+<a href="{$goods.url}" title="{$goods.name|escape:html}" target="_blank">
+<img src="{$goods.thumb}" alt="{$goods.name|escape:html}" />
+</a>
+<a class="name" href="{$goods.url}" title="{$goods.name|escape:html}" target="_blank">
+{$goods.name|escape:html}
+</a>
+<p>
+<strong><!-- {if $goods.promote_price neq ""} -->{$goods.promote_price}<!-- {else}-->{$goods.shop_price}<!--{/if}--></strong>
+<del>{$goods.market_price}</del>
+</p>
+</li>
+ <!--{/foreach}-->
+
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+</ul>
+<div class="fl floorRight">
+<!-- TemplateBeginEditable name="首页_第二分类右图1" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<!-- TemplateBeginEditable name="首页_第二分类右图2" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<!-- TemplateBeginEditable name="首页_第二分类右图3" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<!-- TemplateBeginEditable name="首页_第二分类右图4" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<!-- TemplateBeginEditable name="首页_第二分类右图5" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+</div>
+</div>
+<ul class="brandList">
+<!-- #BeginLibraryItem "/library/ibeand2.lbi" --><!-- #EndLibraryItem -->
+</ul></div>
+<div class="floor floor_3">
+<div class="floorCon">
+<div class="fl floorLeft">
+<h2><a href="#" target="_blank">3F 鞋靴、运动、箱包</a></h2>
+<!-- TemplateBeginEditable name="首页_第三分类左图" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<ul>
+ <!-- #BeginLibraryItem "/library/icat3.lbi" --><!-- #EndLibraryItem -->
+</ul>
+</div>
+<ul class="fl floorMain">
+<!-- TemplateBeginEditable name="首页_第三分类产品" -->
+<!-- #BeginLibraryItem "/library/cat_goods.lbi" -->
+
+<!--{foreach from=$cat_goods item=goods}-->
+<li>
+<a href="{$goods.url}" title="{$goods.name|escape:html}" target="_blank">
+<img src="{$goods.thumb}" alt="{$goods.name|escape:html}" />
+</a>
+<a class="name" href="{$goods.url}" title="{$goods.name|escape:html}" target="_blank">
+{$goods.name|escape:html}
+</a>
+<p>
+<strong><!-- {if $goods.promote_price neq ""} -->{$goods.promote_price}<!-- {else}-->{$goods.shop_price}<!--{/if}--></strong>
+<del>{$goods.market_price}</del>
+</p>
+</li>
+ <!--{/foreach}-->
+
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+</ul>
+<div class="fl floorRight">
+<!-- TemplateBeginEditable name="首页_第三分类右图1" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<!-- TemplateBeginEditable name="首页_第三分类右图2" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<!-- TemplateBeginEditable name="首页_第三分类右图3" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<!-- TemplateBeginEditable name="首页_第三分类右图4" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<!-- TemplateBeginEditable name="首页_第三分类右图5" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+</div>
+</div>
+<ul class="brandList">
+<!-- #BeginLibraryItem "/library/ibeand3.lbi" --><!-- #EndLibraryItem -->
+</ul></div>
+<div class="floor floor_4">
+<div class="floorCon">
+<div class="fl floorLeft">
+<h2><a href="#" target="_blank">4F 家居、家纺、建材</a></h2>
+<!-- TemplateBeginEditable name="首页_第四分类左图" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<ul>
+ <!-- #BeginLibraryItem "/library/icat4.lbi" --><!-- #EndLibraryItem -->
+</ul>
+</div>
+<ul class="fl floorMain">
+<!-- TemplateBeginEditable name="首页_第四分类产品" -->
+<!-- #BeginLibraryItem "/library/cat_goods.lbi" -->
+
+<!--{foreach from=$cat_goods item=goods}-->
+<li>
+<a href="{$goods.url}" title="{$goods.name|escape:html}" target="_blank">
+<img src="{$goods.thumb}" alt="{$goods.name|escape:html}" />
+</a>
+<a class="name" href="{$goods.url}" title="{$goods.name|escape:html}" target="_blank">
+{$goods.name|escape:html}
+</a>
+<p>
+<strong><!-- {if $goods.promote_price neq ""} -->{$goods.promote_price}<!-- {else}-->{$goods.shop_price}<!--{/if}--></strong>
+<del>{$goods.market_price}</del>
+</p>
+</li>
+ <!--{/foreach}-->
+
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+</ul>
+<div class="fl floorRight">
+<!-- TemplateBeginEditable name="首页_第四分类右图1" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<!-- TemplateBeginEditable name="首页_第四分类右图2" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<!-- TemplateBeginEditable name="首页_第四分类右图3" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<!-- TemplateBeginEditable name="首页_第四分类右图4" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<!-- TemplateBeginEditable name="首页_第四分类右图5" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+</div>
+</div>
+<ul class="brandList">
+<!-- #BeginLibraryItem "/library/ibeand4.lbi" --><!-- #EndLibraryItem -->
+</ul></div>
+<div class="floor floor_5">
+<div class="floorCon">
+<div class="fl floorLeft">
+<h2><a href="#" target="_blank">5F 数码、家电</a></h2>
+<!-- TemplateBeginEditable name="首页_第五分类左图" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<ul>
+ <!-- #BeginLibraryItem "/library/icat5.lbi" --><!-- #EndLibraryItem -->
+</ul>
+</div>
+<ul class="fl floorMain">
+<!-- TemplateBeginEditable name="首页_第五分类产品" -->
+<!-- #BeginLibraryItem "/library/cat_goods.lbi" -->
+
+<!--{foreach from=$cat_goods item=goods}-->
+<li>
+<a href="{$goods.url}" title="{$goods.name|escape:html}" target="_blank">
+<img src="{$goods.thumb}" alt="{$goods.name|escape:html}" />
+</a>
+<a class="name" href="{$goods.url}" title="{$goods.name|escape:html}" target="_blank">
+{$goods.name|escape:html}
+</a>
+<p>
+<strong><!-- {if $goods.promote_price neq ""} -->{$goods.promote_price}<!-- {else}-->{$goods.shop_price}<!--{/if}--></strong>
+<del>{$goods.market_price}</del>
+</p>
+</li>
+ <!--{/foreach}-->
+
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+</ul>
+<div class="fl floorRight">
+<!-- TemplateBeginEditable name="首页_第五分类右图1" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<!-- TemplateBeginEditable name="首页_第五分类右图2" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<!-- TemplateBeginEditable name="首页_第五分类右图3" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<!-- TemplateBeginEditable name="首页_第五分类右图4" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<!-- TemplateBeginEditable name="首页_第五分类右图5" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+</div>
+</div>
+<ul class="brandList">
+<!-- #BeginLibraryItem "/library/ibeand5.lbi" --><!-- #EndLibraryItem -->
+</ul></div>
+<div class="floor floor_6">
+<div class="floorCon">
+<div class="fl floorLeft">
+<h2><a href="#" target="_blank">6F 母婴之家</a></h2>
+<!-- TemplateBeginEditable name="首页_第六分类左图" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<ul>
+ <!-- #BeginLibraryItem "/library/icat6.lbi" --><!-- #EndLibraryItem -->
+</ul>
+</div>
+<ul class="fl floorMain">
+<!-- TemplateBeginEditable name="首页_第六分类产品" -->
+<!-- #BeginLibraryItem "/library/cat_goods.lbi" -->
+
+<!--{foreach from=$cat_goods item=goods}-->
+<li>
+<a href="{$goods.url}" title="{$goods.name|escape:html}" target="_blank">
+<img src="{$goods.thumb}" alt="{$goods.name|escape:html}" />
+</a>
+<a class="name" href="{$goods.url}" title="{$goods.name|escape:html}" target="_blank">
+{$goods.name|escape:html}
+</a>
+<p>
+<strong><!-- {if $goods.promote_price neq ""} -->{$goods.promote_price}<!-- {else}-->{$goods.shop_price}<!--{/if}--></strong>
+<del>{$goods.market_price}</del>
+</p>
+</li>
+ <!--{/foreach}-->
+
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+</ul>
+<div class="fl floorRight">
+<!-- TemplateBeginEditable name="首页_第六分类右图1" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<!-- TemplateBeginEditable name="首页_第六分类右图2" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<!-- TemplateBeginEditable name="首页_第六分类右图3" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<!-- TemplateBeginEditable name="首页_第六分类右图4" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<!-- TemplateBeginEditable name="首页_第六分类右图5" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+</div>
+</div>
+<ul class="brandList">
+<!-- #BeginLibraryItem "/library/ibeand6.lbi" --><!-- #EndLibraryItem -->
+</ul></div>
+<div class="floor floor_7">
+<div class="floorCon">
+<div class="fl floorLeft">
+<h2><a href="#" target="_blank">7F 图书、音像</a></h2>
+<!-- TemplateBeginEditable name="首页_第七分类左图" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<ul>
+ <!-- #BeginLibraryItem "/library/icat7.lbi" --><!-- #EndLibraryItem -->
+ </ul>
+</div>
+<ul class="fl floorMain">
+<!-- TemplateBeginEditable name="首页_第七分类产品" -->
+<!-- #BeginLibraryItem "/library/cat_goods.lbi" -->
+
+<!--{foreach from=$cat_goods item=goods}-->
+<li>
+<a href="{$goods.url}" title="{$goods.name|escape:html}" target="_blank">
+<img src="{$goods.thumb}" alt="{$goods.name|escape:html}" />
+</a>
+<a class="name" href="{$goods.url}" title="{$goods.name|escape:html}" target="_blank">
+{$goods.name|escape:html}
+</a>
+<p>
+<strong><!-- {if $goods.promote_price neq ""} -->{$goods.promote_price}<!-- {else}-->{$goods.shop_price}<!--{/if}--></strong>
+<del>{$goods.market_price}</del>
+</p>
+</li>
+ <!--{/foreach}-->
+
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+</ul>
+<div class="fl floorRight">
+<!-- TemplateBeginEditable name="首页_第七分类右图1" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<!-- TemplateBeginEditable name="首页_第七分类右图2" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<!-- TemplateBeginEditable name="首页_第七分类右图3" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<!-- TemplateBeginEditable name="首页_第七分类右图4" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<!-- TemplateBeginEditable name="首页_第七分类右图5" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+</div>
+</div>
+<ul class="brandList">
+<!-- #BeginLibraryItem "/library/ibeand7.lbi" --><!-- #EndLibraryItem -->
+</ul></div>
+<div class="floor floor_8">
+<div class="floorCon">
+<div class="fl floorLeft">
+<h2><a href="#" target="_blank">8F 保健、滋补、器械</a></h2>
+<!-- TemplateBeginEditable name="首页_第八分类左图" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<ul>
+ <!-- #BeginLibraryItem "/library/icat8.lbi" --><!-- #EndLibraryItem -->
+</ul>
+</div>
+<ul class="fl floorMain">
+<!-- TemplateBeginEditable name="首页_第八分类产品" -->
+<!-- #BeginLibraryItem "/library/cat_goods.lbi" -->
+
+<!--{foreach from=$cat_goods item=goods}-->
+<li>
+<a href="{$goods.url}" title="{$goods.name|escape:html}" target="_blank">
+<img src="{$goods.thumb}" alt="{$goods.name|escape:html}" />
+</a>
+<a class="name" href="{$goods.url}" title="{$goods.name|escape:html}" target="_blank">
+{$goods.name|escape:html}
+</a>
+<p>
+<strong><!-- {if $goods.promote_price neq ""} -->{$goods.promote_price}<!-- {else}-->{$goods.shop_price}<!--{/if}--></strong>
+<del>{$goods.market_price}</del>
+</p>
+</li>
+ <!--{/foreach}-->
+
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+</ul>
+<div class="fl floorRight">
+<!-- TemplateBeginEditable name="首页_第八分类右图1" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<!-- TemplateBeginEditable name="首页_第八分类右图2" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<!-- TemplateBeginEditable name="首页_第八分类右图3" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<!-- TemplateBeginEditable name="首页_第八分类右图4" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+<!-- TemplateBeginEditable name="首页_第八分类右图5" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+</div>
+</div>
+<ul class="brandList">
+<!-- #BeginLibraryItem "/library/ibeand8.lbi" --><!-- #EndLibraryItem -->
+</ul>
+</div>
+    <div class="blank"></div>
+	<div class="footer_banner">
+	<script language=javascript>if (screen.width >= 1280){ document.write('{insert name="ads" id=64 num=1}') }   else {document.write('{insert name="ads" id=65 num=1}')}</script>
+	</div>
+</div>
+</div>
+
+</div>
+
+<div class="block">
+<ul class="footer_cat clearfix">
+<!--{foreach from=$categories item=cat name=cur}-->
+{if $smarty.foreach.cur.iteration <9}
+<li>
+<a target="_blank" class="cat_img" href="#">
+<img src="images/class/{$smarty.foreach.cur.iteration}.jpg">
+</a>
+<p>
+<a href="{$cat.url}">{$cat.name|escape:html}</a>
+</p>
+<div>
+<!--{foreach from=$cat.cat_id item=child name=childcur}-->
+<!--{if $smarty.foreach.childcur.iteration <8}-->
+ <a href="{$child.url}" title="{$child.name|escape:html}">{$child.name|escape:html}</a>|
+<!--{/if}-->
+<!--{/foreach}-->  
+</div>
+</li>
+{/if}
+<!--{/foreach}--> 
+</ul>
+</div>
+<!-- #BeginLibraryItem "/library/index_footer.lbi" --><!-- #EndLibraryItem -->
+<!--js start-->
+<!--无页面级头部js时, 全局头部js下移-->
+<script type="text/javascript" src="js/global_site_top-mall.js"></script>
+<script type="text/javascript" src="js/mall_index.js"></script>
+<!--js end-->
+</body>
+</html>

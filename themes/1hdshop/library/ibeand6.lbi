@@ -1,0 +1,9 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<?php $this->assign('brand_nav', get_cat_brands(0));?>
+<!-- {foreach from=$brand_nav item=brandnav name=brand_foreach} -->
+{if $smarty.foreach.brand_foreach.index < 13}  
+<li>
+<a title="{$brandnav.brand_name|escape:html}" href="{$brandnav.url}"><img src="data/brandlogo/{$brandnav.brand_logo}" /></a>
+</li>
+{/if}
+<!-- {/foreach} -->	     

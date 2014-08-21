@@ -1,0 +1,17 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="tsSlide" id="content_tsSlide">
+<ul style="left: 0px;" class="tsSlideList" id="tsSlideList">
+<?php $this->assign('playerdb', get_flash_xml());?>
+{foreach from=$playerdb item=item key=key name=fnum}
+<li>
+<a href="{$item.url}" title="{$item.text}" target="_blank"><img src="{$item.src}" alt="{$item.text}"></a>
+</li>
+{/foreach}
+</ul>
+<ul class="tsSlideSwitch">
+{foreach from=$playerdb item=item key=key name=fnum}
+<li{if $smarty.foreach.fnum.iteration eq 1} class="cur"{/if}>{$smarty.foreach.fnum.iteration}</li>
+{/foreach}
+</ul>
+<div class="tsSlideMask"></div>
+ </div>

@@ -1,0 +1,64 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!--翻页 start-->
+<form name="selectPageForm" action="{$smarty.server.PHP_SELF}" method="get">
+<!-- {if $pager.styleid eq 0 } -->
+<div id="pager">
+  {$lang.pager_1}{$pager.record_count}{$lang.pager_2}{$lang.pager_3}{$pager.page_count}{$lang.pager_4} <span> <a href="{$pager.page_first}">{$lang.page_first}</a> <a href="{$pager.page_prev}">{$lang.page_prev}</a> <a href="{$pager.page_next}">{$lang.page_next}</a> <a href="{$pager.page_last}">{$lang.page_last}</a> </span>
+    <!--{foreach from=$pager.search key=key item=item}-->
+      {if $key eq 'keywords'}
+          <input type="hidden" name="{$key}" value="{$item|escape:decode_url}" />
+        {else}
+          <input type="hidden" name="{$key}" value="{$item}" />
+      {/if}
+    <!--{/foreach}-->
+    <select name="page" id="page" onchange="selectPage(this)">
+    {html_options options=$pager.array selected=$pager.page}
+    </select>
+</div>
+<!--{else}-->
+
+<!--翻页 start-->
+
+        <!--分页 { -->
+        <div class="pager">
+		<div class="pagerjump">
+		<!-- {if $pager.page_prev} --><a class="previous" href='{$pager.page_prev}'><em>上一页</em></a><!-- {else} --><a class="previous"><em>上一页</em></a><!-- {/if} -->
+		  <!-- {if $pager.page_count neq 1} -->
+       <!--{foreach from=$pager.page_number key=key item=item}-->
+       <!-- {if $pager.page eq $key} -->
+		<a href='{$item}' class="num current">{$key}</a> 
+		<!-- {else} -->
+		<a href='{$item}' class="num">{$key}</a>  
+		<!-- {/if} -->
+    <!--{/foreach}-->
+  <!-- {/if} -->
+		<!-- {if $pager.page_next} -->
+		<a class="next" href='{$pager.page_next}'><em>下一页</em></a><!-- {else} --><a class="next"><em>下一页</em></a>
+		<!-- {/if} -->
+		</div>
+		    <!--{foreach from=$pager.search key=key item=item}-->
+      {if $key eq 'keywords'}
+          <input type="hidden" name="{$key}" value="{$item|escape:decode_url}" />
+        {else}
+          <input type="hidden" name="{$key}" value="{$item}" />
+      {/if}
+    <!--{/foreach}-->
+		<div class="gotopage"><span style="margin:0 5px;">共<b>{$pager.record_count}</b>记录</span> <span>跳转至</span><div class="input"><input type='text' class='text' name='page' onkeydown="if(event.keyCode==13)selectPage(this)"/> <input type="submit" class='btn_submit' value="确定"></div></div>
+        </div>
+        <!-- } 分页 -->
+
+
+<!--翻页 END-->
+
+<!-- {/if} -->
+</form>
+<script type="Text/Javascript" language="JavaScript">
+<!--
+{literal}
+function selectPage(sel)
+{
+  sel.form.submit();
+}
+{/literal}
+//-->
+</script>
