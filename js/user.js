@@ -408,6 +408,7 @@ function checkEmail(email)
   if( submit_disabled )
   {
     document.forms['formUser'].elements['Submit'].disabled = 'disabled';
+    document.getElementById('zphone').disabled='disabled';
     return false;
   }
   Ajax.call( 'user.php?act=check_email', 'email=' + email, check_email_callback , 'GET', 'TEXT', true, true );
@@ -419,11 +420,13 @@ function check_email_callback(result)
   {
     document.getElementById('email_notice').innerHTML = msg_can_rg;
     document.forms['formUser'].elements['Submit'].disabled = '';
+    document.getElementById('zphone').disabled='';
   }
   else
   {
     document.getElementById('email_notice').innerHTML = msg_email_registered;
     document.forms['formUser'].elements['Submit'].disabled = 'disabled';
+    document.getElementById('zphone').disabled='disabled';
   }
 }
 

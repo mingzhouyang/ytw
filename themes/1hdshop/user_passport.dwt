@@ -95,7 +95,7 @@
           <span id="username_notice" hidden style="color:#999"> *</span>
 
           <input name="email" type="text" size="25" id="email" onblur="checkEmail(this.value);"  class="inputBg"/>
-          <input id="zphone" type="button" value=" 获取手机验证码 " onclick="sendSms();">
+          <input id="zphone" type="button" value=" 获取手机验证码 " onclick="sendSms();" disabled>
             <span id="email_notice" style="color:#999"> * 输入手机号，可用此手机登录账号及找回密码</span>
           </td>
         </tr>
