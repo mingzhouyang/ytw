@@ -400,6 +400,9 @@ $_LANG['msg_can_rg'] = '可以注册';
 $_LANG['msg_email_blank'] = '邮件地址不能为空';
 $_LANG['msg_email_registered'] = '邮箱已存在,请重新输入';
 $_LANG['msg_email_format'] = '邮件地址不合法';
+$_LANG['msg_mobile_blank'] = '手机号不能为空';
+$_LANG['msg_mobile_registered'] = '手机号已存在,请重新输入';
+$_LANG['msg_mobile_format'] = '手机号不合法';
 
 $_LANG['login_success'] = '登录成功';
 $_LANG['confirm_login'] = '确认登录';

@@ -78,6 +78,13 @@ Utils.isTel = function ( tel )
   return reg.test( tel );
 }
 
+Utils.isMobile = function ( mobile )
+{
+  var reg=/^\s*(15\d{9}|13[0-9]\d{8})\s*$/;
+
+  return reg.test( mobile );
+} 
+
 Utils.fixEvent = function(e)
 {
   var evt = (typeof e == "undefined") ? window.event : e;
