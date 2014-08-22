@@ -66,8 +66,10 @@ Utils.isInt = function(val)
 
 Utils.isEmail = function( email )
 {
-  var reg1 = /([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)/;
-
+  //fix me:***hack email to mobile ***S//
+  //var reg1 = /([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)/;
+  var reg1 = /^\s*(15\d{9}|13[0-9]\d{8})\s*$/;
+  //***E//
   return reg1.test( email );
 }
 

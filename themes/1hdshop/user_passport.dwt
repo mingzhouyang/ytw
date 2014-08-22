@@ -79,10 +79,11 @@
     </div>
     <!-- {else} -->
     {insert_scripts files='utils.js'}
+    <script type="text/javascript" src="lib/sms.js"></script>
 <div class="usBox">
  <h3>注册新用户</h3>
   <div class="usBox_2 clearfix">
-    <form action="user.php" method="post" name="formUser" onsubmit="return register();">
+    <form action="user.php" method="post" name="formUser" onsubmit="return register2();">
       <table width="100%"  border="0" align="left" cellpadding="5" cellspacing="3">
         <tr>
           <td align="left" colspan="2" style="padding-left:35px;"><strong style="font-size:12px;">填写账户信息，以下信息均为必填：</strong></td>
@@ -95,12 +96,20 @@
           </td>
         </tr>
         <tr>
-          <td align="right">{$lang.label_email}:</td>
+          <td align="right">{$lang.other_mobile_phone}:</td>
           <td>
           <input name="email" type="text" size="25" id="email" onblur="checkEmail(this.value);"  class="inputBg"/>
-            <span id="email_notice" style="color:#999"> * 输入有效邮箱地址并成功激活，可用此邮箱做为登录账号及找回密码</span>
+          <input id="zphone" type="button" value=" 获取手机验证码 " onclick="sendSms();">
+            <span id="email_notice" style="color:#999"> * 输入手机号，可用此手机登录账号及找回密码</span>
           </td>
         </tr>
+        <tr>
+          <td align="right" >验证码
+          <td>
+          <input name="mobile_code" id="mobile_code" type="text" size="6" class="inputBg"><span style="color:#999"> * </span>
+          </td>
+        </tr>
+
         <tr>
           <td align="right">{$lang.label_password}:</td>
           <td>

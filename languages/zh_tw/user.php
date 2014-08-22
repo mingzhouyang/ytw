@@ -397,12 +397,14 @@ $_LANG['msg_un_length'] = '用戶名最長不得超過7個漢字';
 $_LANG['msg_un_format'] = '用戶名含有非法字符';
 $_LANG['msg_un_registered'] = '用戶名已經存在,請重新輸入';
 $_LANG['msg_can_rg'] = '可以註冊';
+/*
 $_LANG['msg_email_blank'] = '郵件地址不能為空';
 $_LANG['msg_email_registered'] = '郵箱已存在,請重新輸入';
 $_LANG['msg_email_format'] = '郵件地址不合法';
-$_LANG['msg_mobile_blank'] = '手機不能為空';
-$_LANG['msg_mobile_registered'] = '手機已存在,請重新輸入';
-$_LANG['msg_mobile_format'] = '手機不合法';
+*/
+$_LANG['msg_email_blank'] = '手機不能為空';
+$_LANG['msg_email_registered'] = '手機已存在,請重新輸入';
+$_LANG['msg_email_format'] = '手機不合法';
 
 $_LANG['login_success'] = '登錄成功';
 $_LANG['confirm_login'] = '確認登錄';

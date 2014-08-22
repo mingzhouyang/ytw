@@ -397,12 +397,14 @@ $_LANG['msg_un_length'] = '用户名最长不得超过7个汉字';
 $_LANG['msg_un_format'] = '用户名含有非法字符';
 $_LANG['msg_un_registered'] = '用户名已经存在,请重新输入';
 $_LANG['msg_can_rg'] = '可以注册';
+/*
 $_LANG['msg_email_blank'] = '邮件地址不能为空';
 $_LANG['msg_email_registered'] = '邮箱已存在,请重新输入';
 $_LANG['msg_email_format'] = '邮件地址不合法';
-$_LANG['msg_mobile_blank'] = '手机号不能为空';
-$_LANG['msg_mobile_registered'] = '手机号已存在,请重新输入';
-$_LANG['msg_mobile_format'] = '手机号不合法';
+*/
+$_LANG['msg_email_blank'] = '手机号不能为空';
+$_LANG['msg_email_registered'] = '手机号已存在,请重新输入';
+$_LANG['msg_email_format'] = '手机号不合法';
 
 $_LANG['login_success'] = '登录成功';
 $_LANG['confirm_login'] = '确认登录';
@@ -502,9 +504,14 @@ $_LANG['passport_js']['msg_un_length'] = '* 用户名最长不得超过7个汉�
 $_LANG['passport_js']['msg_un_format'] = '* 用户名含有非法字符';
 $_LANG['passport_js']['msg_un_registered'] = '* 用户名已经存在,请重新输入';
 $_LANG['passport_js']['msg_can_rg'] = '* 可以注册';
+/*
 $_LANG['passport_js']['msg_email_blank'] = '* 邮件地址不能为空';
 $_LANG['passport_js']['msg_email_registered'] = '* 邮箱已存在,请重新输入';
 $_LANG['passport_js']['msg_email_format'] = '* 邮件地址不合法';
+*/
+$_LANG['passport_js']['msg_email_blank'] = '* 手机不能为空';
+$_LANG['passport_js']['msg_email_registered'] = '* 手机已存在,请重新输入';
+$_LANG['passport_js']['msg_email_format'] = '* 手机不合法';
 $_LANG['passport_js']['msg_blank'] = '不能为空';
 $_LANG['passport_js']['no_select_question'] = '- 您没有完成密码提示问题的操作';
 $_LANG['passport_js']['passwd_balnk'] = '- 密码中不能包含空格';

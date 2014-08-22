@@ -353,6 +353,16 @@ elseif ($action == 'act_login')
         }
     }
 
+//fix me login with cellphone ***S//
+    $chars = "/^13[0-9]{1}[0-9]{8}$|15[0-9]{1}[0-9]{8}$|18[0-9]{1}[0-9]{8}$/";
+    if(preg_match($chars, $username))
+    {
+        $sql ="select user_name from ".$ecs->table('users')." where email='".$username."'";
+        $username_e = $db->getOne($sql);
+        if($username_e) $username=$username_e;
+    }
+//***E//
+
     if ($user->login($username, $password,isset($_POST['remember'])))
     {
         update_user_info();
@@ -537,7 +547,7 @@ elseif ($action == 'act_edit_profile')
     {
          show_message($_LANG['passport_js']['home_phone_invalid']);
     }
-    if (!is_email($email))
+    if (!empty($msn) && !is_email($email))
     {
         show_message($_LANG['msg_email_format']);
     }

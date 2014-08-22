@@ -60,8 +60,8 @@
                   {$lang.female}&nbsp;&nbsp; </td>
                 </tr>
                 <tr>
-                  <td width="28%" align="right" bgcolor="#FFFFFF">{$lang.email}： </td>
-                  <td width="72%" align="left" bgcolor="#FFFFFF"><input name="email" type="text" value="{$profile.email}" size="25" class="inputBg" /><span style="color:#FF0000"> *</span></td>
+                  <td width="28%" align="right" bgcolor="#FFFFFF">{$lang.other_mobile_phone}： </td>
+                  <td width="72%" align="left" bgcolor="#FFFFFF"><span>{$profile.email} </span></td>
                 </tr>
 		{foreach from=$extend_info_list item=field}
 		<!-- {if $field.id eq 6} -->
