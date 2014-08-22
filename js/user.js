@@ -433,8 +433,9 @@ function check_email_callback(result)
 function register()
 {
   var frm  = document.forms['formUser'];
-  var username  = Utils.trim(frm.elements['username'].value);
   var email  = frm.elements['email'].value;
+  frm.elements['username'].value = email;
+  var username  = Utils.trim(frm.elements['username'].value);
   var password  = Utils.trim(frm.elements['password'].value);
   var confirm_password = Utils.trim(frm.elements['confirm_password'].value);
   var checked_agreement = frm.elements['agreement'].checked;

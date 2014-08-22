@@ -89,15 +89,11 @@
           <td align="left" colspan="2" style="padding-left:35px;"><strong style="font-size:12px;">填写账户信息，以下信息均为必填：</strong></td>
         </tr>
         <tr>
-          <td width="13%" align="right">{$lang.label_username}:</td>
-          <td width="87%">
-          <input name="username" type="text" size="25" id="username" onblur="is_registered(this.value);" class="inputBg"/>
-            <span id="username_notice" style="color:#999"> *</span>
-          </td>
-        </tr>
-        <tr>
           <td align="right">{$lang.other_mobile_phone}:</td>
           <td>
+          <input name="username" hidden type="text" size="25" id="username" class="inputBg"/>
+          <span id="username_notice" hidden style="color:#999"> *</span>
+
           <input name="email" type="text" size="25" id="email" onblur="checkEmail(this.value);"  class="inputBg"/>
           <input id="zphone" type="button" value=" 获取手机验证码 " onclick="sendSms();">
             <span id="email_notice" style="color:#999"> * 输入手机号，可用此手机登录账号及找回密码</span>
