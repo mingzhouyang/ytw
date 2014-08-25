@@ -904,8 +904,6 @@ function clock(key)
 <!-- #BeginLibraryItem "/library/index_footer.lbi" --><!-- #EndLibraryItem -->
 <!--js start-->
 <!--无页面级头部js时, 全局头部js下移-->
-<script type="text/javascript" src="js/global_site_top-mall.js"></script>
-<script type="text/javascript" src="js/mall_index.js"></script>
 <!--js end-->
 </body>
 </html>
