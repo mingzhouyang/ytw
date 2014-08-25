@@ -666,6 +666,7 @@
            <div align="center" style="margin:8px auto;">
             <input type="image" src="images/bnt_subOrder.gif" />
             <input type="hidden" name="step" value="done" />
+            <input type="hidden" id="commuintyID" name="commuintyID" value=1 />
             </div>
     </div>
     </form>

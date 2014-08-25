@@ -24,7 +24,7 @@ var process_request = "{$lang.process_request}";
  </div>
 </div>
 <div class="block clearfix">  
-      <div class="logo"><a href="../index.php" name="top"><img src="images/logo.gif"></a>indexheader</div>
+      <div class="logo"><a href="../index.php" name="top"><img src="images/logo.gif"></a><script>document.write(document.getCookie("cID")==null?1:document.getCookie("cID"));</script></div>
 	 <script type="text/javascript">
     {literal}
     <!--

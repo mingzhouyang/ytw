@@ -534,7 +534,10 @@ function checkOrderForm(frm)
       }
     }
   }
+  //add commuintyID //
+  document.getElementById("commuintyID").value = (document.getCookie("cID")==null?1:document.getCookie("cID"));
   frm.action = frm.action + '?step=done';
+
   return true;
 }
 

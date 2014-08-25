@@ -1413,6 +1413,7 @@ elseif ($_REQUEST['step'] == 'done')
         'order_status'    => OS_UNCONFIRMED,
         'shipping_status' => SS_UNSHIPPED,
         'pay_status'      => PS_UNPAYED,
+        'c_id'            => $_POST['commuintyID'],
         'agency_id'       => get_agency_by_regions(array($consignee['country'], $consignee['province'], $consignee['city'], $consignee['district']))
         );
 

@@ -860,6 +860,7 @@ function get_flash_tpl_info($dir, $file)
 function set_flash_data($tplname, &$msg)
 {
     $flashdata = get_flash_xml();
+    /*
     if (empty($flashdata))
     {
         $flashdata[] = array(
@@ -878,6 +879,7 @@ function set_flash_data($tplname, &$msg)
                                 'url' =>'http://help.ecshop.com/index.php?doc-view-108.htm'
                             );
     }
+    */
     switch($tplname)
     {
         case 'uproll':
