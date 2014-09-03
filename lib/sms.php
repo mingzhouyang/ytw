@@ -8,7 +8,7 @@ header("Content-type:text/html; charset=UTF-8");
 define('MSG_SDK', '18051957082');
 define('MSG_CODE_MD5', '8678770e21e4e7c8901c1f7ac6398f9b');
 define('MSG_SUBCODE', '2697');
-define('MSG_VERFY_BEFORE','亲爱的无锡九樱电子商务会员，欢迎您注册，手机验证码为：');
+define('MSG_VERFY_BEFORE','亲爱的樱淘屋会员，欢迎您注册，手机验证码为：');
 define('MSG_VERFY_AFTER','。www.962068.com【樱桃屋】');
 
 //header("Content-Type:text/html;charset=utf-8");
